@@ -1,0 +1,33 @@
+<h2 class="page-header">Register</h2>
+{{#if errors}}
+    {{#each errors}}
+        <div class="notice error alert alert-danger">
+            <i class="icon-remove-sign icon-large">{{msg}}</i>
+        </div>
+    {{/each}}
+{{/if}}
+<form method="post" action="/users/register">
+    <div class="form-grounp">
+        <label>Name</label>
+        <input class="form-control" type="text" placeholder="Name" name="name">
+    </div>
+    <div class="form-grounp">
+        <label>Username</label>
+        <input class="form-control" type="text" placeholder="Username" name="username">
+    </div>
+    <div class="form-grounp">
+        <label>Email</label>
+        <input class="form-control" type="email" placeholder="Email" name="email">
+    </div>
+    <div class="form-grounp">
+        <label>Password</label>
+        <input class="form-control" type="password" placeholder="Password" name="password">
+    </div>
+    <div class="form-grounp">
+        <label>Confirm Password</label>
+        <input class="form-control" type="password" placeholder="Password" name="password2">
+    </div>
+    <br>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+</form>
