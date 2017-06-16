@@ -1,0 +1,17 @@
+.products {
+    max-width: 1000px;
+    margin: auto;
+
+    @include bp-mobile {
+        text-align: center;
+        font-size: 0;
+    }
+
+    @include bp-desktop {
+        & {
+            max-width: 660px;
+            margin: auto;
+        }
+    }
+}
+

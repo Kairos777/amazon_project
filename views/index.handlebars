@@ -1,16 +1,18 @@
-<h2 class="page-header">Products</h2>
-
-{{#each products}}
-    <div class="col-sm-4">
-        <a target="_blank" href={{amazonLink}}>
-            <img src={{image}} >
-        </a>
-        <h4>{{title}}</h4>
-        <p>{{description}}</p>
-        <p>{{price}}</p>
-        <a class="button" target="_blank" href={{amazonLink}}>Check it out</a>
-    </div>
-{{/each}}
+<div class="products clearfix">
+    {{#each products}}
+        <div class="col-sm-6 col-md-4 col-lg-4 cart">
+            <h3 class="title">{{title}}</h3>
+            <a target="_blank" href={{amazonLink}}>
+                <img class="media" src={{image}} >
+            </a>
+            <p class="description">{{description}}</p>
+            <div class="cart-footer">
+                <p class="price">{{price}}</p>
+                <a class="button" target="_blank" href={{amazonLink}}>Check it out</a>
+            </div>
+        </div>
+    {{/each}}
+</div>
 
 <ul class="pagination">
     {{#each pages}}

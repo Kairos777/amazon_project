@@ -1,0 +1,76 @@
+.cart {
+
+    margin-bottom: 30px;
+
+    .title {
+        height: 19px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        text-transform: uppercase;
+        font-size: 18px;
+        text-align: center;
+        font-family: $secondary_font;
+    }
+
+    .description {
+        font-size: 14px;
+        height: 82px;
+        overflow: hidden;
+    }
+
+    .media {
+        max-width: 100%;
+        margin-bottom: 19px;
+        box-shadow: 0 0 1px $grey;
+    }
+
+    .cart-footer {
+        font-size: 0;
+
+    }
+
+    .price {
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(100% - 187px);
+        font-size: 16px;
+        margin: 0;
+        font-family: $secondary_font;
+        height: 22px;
+        overflow: hidden;
+    }
+
+    .button {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 16px 0;
+        width: 187px;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        background-color: $blue;
+        color: #fff;
+        transition: background-color .25s ease-out;
+
+        &:hover {
+            text-decoration: none;
+            background-color: lighten($blue, 15);
+            transition: background-color 0s;
+        }
+
+        &:focus{
+            text-decoration: none;
+            background-color: darken($blue, 15);
+        }
+    }
+
+    @include bp-mobile {
+        & {
+            text-align: left;
+            font-size: 0;
+            max-width: 330px;
+            display: inline-block;
+        }
+    }
+}

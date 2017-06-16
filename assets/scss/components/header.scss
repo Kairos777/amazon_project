@@ -1,0 +1,23 @@
+.header {
+    .logo {
+        font-size: 41px;
+        padding: 26px 0;
+        text-align: center;
+        font-family: $secondary_font;
+        text-transform: uppercase;
+    }
+
+    @include bp-desktop {
+        .logo {
+            padding: 25px 0;
+            font-size: 30px;
+        }
+    }
+
+    @include bp-mobile {
+        .logo {
+            padding: 20px 0;
+            font-size: 23px;
+        }
+    }
+}

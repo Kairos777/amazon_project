@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Raleway:400,700" rel="stylesheet">
     <!-- bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
 
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -14,6 +15,17 @@
     <meta name="keywords" content="Amazon, product, shipping, interesting products">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Heronick</div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="container">
+            <h1 class="title">Interesting products</h1>
+            <h2 class="subtitle">partner of amazon.com</h2>
+        </div>
+    </div>
     <div class="container">
         <!-- Header commented
         <div class="header clearfix">
@@ -28,7 +40,7 @@
                     {{/if}}
                     <li role="presentation"><a href="/commentaries">Commentaries</a></li>
                 </ul>
-            </nav>
+            </nav>@import './components/header';
             <h3 class="text-muted">Project name</h3>
         </div>
         -->
@@ -39,9 +51,9 @@
             </div>
         </div>
 
-        <!--<footer class="footer">
-
-        </footer>-->
+        <footer class="footer">
+            <p class="inscription">Amazon.com partner</p>
+        </footer>
     </div>
 </body>
 </html>

@@ -1,1 +1,12 @@
-// imports here
+// Structure
+@import 'structure/vars';
+@import 'structure/main';
+@import 'structure/mixins';
+
+// Components
+@import './components/header';
+@import './components/footer';
+@import './components/banner';
+@import './components/cart';
+@import './components/products';
+@import './components/pagination';

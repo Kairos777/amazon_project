@@ -1,0 +1,22 @@
+.pagination {
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 0;
+    margin: 50px 0 70px;
+
+    & li{
+        display: inline-block;
+        font-size: 14px;
+    }
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    background-color: $blue;
+    border-color: $blue;
+}

@@ -1,9 +1,7 @@
 var express = require('express');
 var path = require('path');
 var exphbs = require('express-handlebars');
-var flash = require('connect-flash');
 var session = require('express-session');
-var passport = require('passport');
 var mongo = require('mongo');
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://zeus_dima:s2p6d10f14@ds029446.mlab.com:29446/amazon_project'); // @TODO replace to config
