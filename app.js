@@ -4,7 +4,7 @@ var exphbs = require('express-handlebars');
 var session = require('express-session');
 var mongo = require('mongo');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://zeus_dima:s2p6d10f14@ds029446.mlab.com:29446/amazon_project'); // @TODO replace to config
+mongoose.connect('mongodb://127.0.0.1:27017/myapp'); // @TODO replace to config
 var db = mongoose.connection;
 
 
